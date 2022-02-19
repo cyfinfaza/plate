@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="icon" rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>plate</title>
 </head>
 <body style="display: flex; align-items: center; justify-content: center; height: 100vh; width: 100vw; margin: 0;">
@@ -11,7 +12,10 @@
 </body>
 <script>
     const plate = document.getElementById('plate');
+    const icon = document.getElementById('icon');
     const plates = ["2022-02-18 20.30.43.jpg", "plate-115330457065huydcoija.png"];
-    plate.src = "plates/" + plates[Math.floor(Math.random() * plates.length)];
+    const plateURL = "plates/" + plates[Math.floor(Math.random() * plates.length)]
+    plate.src = plateURL;
+    icon.href = plateURL;
 </script>
 </html>

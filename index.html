@@ -11,9 +11,15 @@
 	<img id="plate" style="width: 200px; height: 200px;" alt="plate">
 </body>
 <script>
+    const plates = [
+        "2022-02-18 20.30.43.jpg",
+        "plate-115330457065huydcoija.png",
+        "plate-202104061345236781-kdahjlglk (1).png",
+        "mango-plate.png"
+    ];
+
     const plate = document.getElementById('plate');
     const icon = document.getElementById('icon');
-    const plates = ["2022-02-18 20.30.43.jpg", "plate-115330457065huydcoija.png", "plate-202104061345236781-kdahjlglk (1).png"];
     const plateURL = "plates/" + plates[Math.floor(Math.random() * plates.length)]
     plate.src = plateURL;
     icon.href = plateURL;
